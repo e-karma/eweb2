@@ -1,0 +1,1282 @@
+@lost gutter 5px;
+@custom-media --sm-mobile (min-width:320px) and (max-width:480px);
+@custom-media --lg-mobile (min-width:480px) and (max-width:800px);
+@custom-media --sm-tablet (min-width:800px) and (max-width:1000px);
+@custom-media --lg-tablet (min-width:1000px) and (max-width:1300px);
+@custom-media --sm-desktop (min-width:1300px) and (max-width:2200px);
+@custom-media --lg-desktop (min-width:2200px);
+
+$black: #151515;
+$green: #97d700;
+
+body {
+  margin: 0;
+  padding:0;
+  min-height:1000px;
+/*   lost-utility: edit; */
+}
+h1,h2,h3,h4,h5,h6 a, ul, li, p, span {
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-size: 2.9vw
+}
+h2 {
+  font-size: 2.4vw;
+  color: $black;
+}
+h3 {
+  font-size: 2.1vw;
+}
+h4 {
+  font-size: 1.8vw;
+}
+h5 {
+  font-size: 1.5vw;
+}
+h6 {
+  font-size: 1.5vw;
+  font-weight:bold;
+  margin:1em;
+  border-bottom:2px solid #555;
+  width:.8vw;
+}
+
+ul {
+  margin-top:75px;
+}
+li {
+  list-style: none;
+  display: list-item;
+  margin: 20px auto;
+}
+a {
+  color:white;
+  text-decoration: none;
+}
+
+p {
+  padding: 0 1em;
+}
+
+
+img.me {
+  padding: 10px;
+  height: 50px;
+  width:50px;
+}
+img.big{
+  margin: 0 auto;
+  padding:10px;
+  height:200px;
+  width:200px;
+}
+img {
+  width:100%;
+  border-style:none;
+}
+header {
+  height: 75px;
+  width: 100%;
+  background:white;
+  margin-bottom: 10px;
+  box-shadow: 0px 8px 17px rgba(0,0,0,.2);
+}
+
+footer{
+  background: white;
+  margin-top:5px;
+  height:100px;
+}
+
+button {
+  height:60px;
+  min-width:150px;
+  background-color:transparent;
+  border-radius: 0;
+  border: 1px solid #151515;
+  font-size:120%;
+  &:hover {
+    color: #97d700;
+    border: 1px solid #97d700;
+  }
+}
+
+.contact-button {
+  width:100%;
+  margin:3em 0 5em;
+}
+section {
+  height:100%;
+  width:100%;
+
+}
+
+
+.gap40{
+	display: block;
+	height: 40px;
+	width:100%;
+}
+.gap60{
+	display: block;
+	height: 60px;
+	width:100%;
+}
+.gap80{
+	display: block;
+	height: 80px;
+	width:100%;
+}
+.gap120{
+	display: block;
+	height: 120px;
+	width:100%;
+}
+
+/* OFFCANVAS BEGINS HERE!!*/
+/* OFFCANVAS BEGINS HERE!!*/
+
+.container {
+  overflow: hidden;
+  height:100%;
+}
+
+.off-canvas {
+  position: absolute;
+  width: 140px;
+  left: -140px;
+  top: 0;
+  bottom: 0;
+  background:$black;
+  box-shadow: 0px 8px 17px rgba(0,0,0,.2);
+}
+.transformer {
+  max-width:100%;
+  margin:auto;
+  transition: transform 0.3s ease;
+  &.is-open {
+    transform: translate3d(140px, 0, 0);
+  }
+}
+.hamburger-left {
+  text-align:center;
+  margin:1.2em auto;
+}
+.hamburger-right{
+  padding:1em;
+  float:right;
+  vertical-align: middle;
+}
+
+.third{
+  lost-column: 1/3 0;
+  height:220px;
+  text-align:center;
+  span{
+    color:$black;
+  }
+}
+
+
+/* OFFCANVAS BEGINS HERE!!*/
+/* OFFCANVAS BEGINS HERE!!*/
+/* .icon-text {
+  padding: 80px 60px;
+  background: rgba(0, 0, 0, 0.90);
+  color: #333;
+  text-align: center;
+  display: block;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+
+.icon-text::after{
+  content: "";
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  opacity: 0;
+  border: 1px solid #eee;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  z-index: 0;
+}
+ */
+.black {
+  background: #151515;
+}
+
+.inset-border {
+  border:2px solid #97d700;
+  position: absolute;
+  top: 15px;
+  bottom:15px;
+  left:15px;
+  right:15px;
+  opacity: .01;
+  &:hover {
+    opacity:.9;
+    color: #97d700;
+  }
+}
+
+.full-page {
+  width:100%;
+  min-height:100px;
+  margin-bottom:5px;
+  opacity:.9;
+}
+.black {
+  text-align:center;
+  color: #151515;
+}
+.parent {
+  height:100%;
+  margin:0 0 5px 0;
+}
+
+.child {
+  position:relative;
+  lost-waffle: 1/3;
+  height: 400px;
+  margin-bottom:5px;
+  box-shadow: 0px 8px 17px rgba(0,0,0,.2);
+}
+.fa {
+  font-size:500%;
+  color:#fff;
+  margin-top:1em;
+}
+.child-cal {
+  position:relative;
+  lost-waffle: 1/7;
+  height: 100px;
+  box-shadow: 0px 8px 17px rgba(0,0,0,.2);
+}
+.header-overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  background: $black!important;
+  opacity: .8!important;
+  width: 100%;
+  min-height: 300px;
+  z-index:10;
+  :hover {
+      opacity: .65;
+  }
+  h2{
+    color:white;
+    text-align:center;
+    padding-top:15%;
+  }
+}
+.overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  background: $black!important;
+  opacity: .8!important;
+  width: 100%;
+  min-height: 200px;
+  z-index:10;
+  :hover {
+      opacity: .65;
+  }
+  h2{
+    color:white;
+    text-align:center;
+    padding-top:15%;
+  }
+}
+.overlay-black {
+  position:absolute;
+  top:0;
+  left:0;
+  background: $black!important;
+  width: 100%;
+  min-height: 200px;
+  z-index:10;
+  :hover {
+      opacity: .65;
+  }
+  h2{
+    color:white;
+    text-align:center;
+    padding-top:15%;
+  }
+}
+.layer-2-overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  background: $green!important;
+/*   opacity: .8!important;
+ */  width: 100%;
+  min-height: 100px;
+  z-index:10;
+  :hover {
+      opacity: .65;
+  }
+  h2{
+    color:white;
+    text-align:center;
+  /*   padding-top:8%; */
+  }
+}
+.100-overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  background: $black!important;
+  opacity: .8!important;
+  width: 100%;
+  min-height: 100px;
+  z-index:10;
+  :hover {
+      opacity: .65;
+  }
+  h2{
+    color:white;
+    text-align:center;
+    padding-top:15%;
+  }
+}
+
+.overlay {
+  background:white;
+  z-index:10;
+}
+
+.liquid-child {
+  opacity:1;
+}
+
+.r1, .r2, .r3, .r4, .r5, .r6, .r7, .r8, .r9 {
+  background-image: url(images/sprite.jpg);
+  background-repeat: no-repeat;
+  height:200px;
+}
+.r1 {  background-position: 0px 0px;}
+.r2 {  background-position: -600px 0px;}
+.r3 { background-position: -1200px 0px;}
+.r4{  background-position: 0px -500px;}
+.r5{  background-position: -600px -500px;}
+.r6{  background-position: -1200px -500px;}
+.r7{  background-position: 0px -1000px;}
+.r8{  background-position: -600px -1000px;}
+.r9{  background-position: -1200px -1000px;}
+
+.sm1, .sm2, .sm3, .sm4, .sm5, .sm6, .sm7, .sm8, .sm9 {
+  background-image: url(images/eweb-sm-sprite.jpg);
+  background-repeat: no-repeat;
+  height:200px;
+}
+.sm1 {  background-position: 0px 0px;}
+.sm2 {  background-position: -600px 0px;}
+.sm3 {  background-position: -1200px 0px;}
+.sm4{  background-position: 0px -500px;}
+.sm5{  background-position: -600px -500px;}
+.sm6{  background-position: -1200px -500px;}
+.sm7{  background-position: 0px -1000px;}
+.sm8{  background-position: -600px -1000px;}
+.sm9{  background-position: -1200px -1000px;}
+
+
+.bg1, .bg2, .bg3, .bg4, .bg5, .bg6, .bg7, .bg8, .bg9, .bgmtn {
+  background-image: url(images/eweb-sm-sprite.jpg);
+  background-repeat: no-repeat;
+  margin-bottom:5px;
+  height:200px;
+  width:100%;
+}
+.bg15{
+  background:#151515;
+  height:400px;
+  width:100%;
+}
+.bg20{
+  background:white;
+  height:400px;
+  width:100%;
+  a {
+    color:#151515;
+  }
+}
+.black-text{
+  margin: 2em 0;
+  font-size:360%;
+  color: #151515;
+}
+.dash1, .dash2, .dash3, .store1, .store2, .store3, .email1, .email2, .email3, .crm1, .crm2, .crm3, .profile1, .profile2, .profile3, .blog-sm, .blog-lg, .cal1, .cal2, .cal3, .todo1, .todo2, .todo3, .analytics1, .builder1, .msg1, .msg2, .mktg1, .mktg2, .dev1, .dev2, .dev3, .nw1, .nw2, .ss1, .sc1, .content1, .content2, .event1, .profile-sm, .profile-lg, .design1, .design2  {
+  background-image: url(images/eweb-sm-sprite.jpg);
+  background-repeat: no-repeat;
+  height:200px;
+  width:100%;
+}
+.dash1{
+  background-position: -80px -5560px;
+  z-index:-1!important;
+}
+.dash2{background-position: -80px -6495px;}
+.dash3{  background-position: -1510px -19780px;}
+.email1{  background-position: -720px -6500px;}
+.profile-sm{  background-position: 0px -20050px;}
+.profile-lg{  background-position: 0px -20200px;}
+.blog-sm{  background-position: -670px -8760px;}
+.blog-lg{  background-position: 0px -20300px;}
+.cal1{  background-position: -1600px -19900px;}
+.crm1{  background-position: -420px -300px;}
+.crm2{  background-position: -450px -700px;}
+.todo1{  background-position: -1630px -20200px;}
+/* .todo2{
+  background-position: -1680px -20200px;
+}
+.todo3{
+  background-position: -1680px -20200px;
+} */
+
+.design1{
+  background-position: -940px -10830px;
+}
+.mktg1 {background-position: -370px -420px;}
+.mktg2 {background-position: -1475px -19260px;}
+.dev1 {background-position: -40px 10px;}
+.dev2 {background-position: -200px -15850px;}
+.dev3 {background-position: 0px 0px;}
+.nw1  {background-position: -1210px -750px;}
+.nw2 {background-position: -920px -19930px;}
+.ss1 {background-position: -800px -1650px;}
+.sc1 {background-position: -700px -2550px;}
+.builder1 {background-position: -360px -19900px;}
+.analytics1 {background-position: -940px -19930px;}
+.msg1{ background-position: -1660px -19530px;}
+.content1{ background-position: -70px -5580px;}
+.content2{ background-position: -140px -6500px;}
+.eweb-logo-big{ background-position: -380px -19380px;}
+.event1{ background-position: -1600px -26000px;}
+.bg1 {background-position: 0px -12700px;}
+.bgmtn {background-position: 0px -4000px;}
+.bg2 {background-position: 20px -11350px;}
+.bg3 { background-position: -200px -7500px;z-index:0;}
+.bg4 { background-position: -90px -3090px;}
+.bg5 { background-position: 0px -18500px;}
+.bg6{ background-position: -180px -10790px;}
+.bg7{ background-position: 0px -11000px;}
+.bg8{  background-position: 0px -12000px;}
+
+
+.liquid-child > .bg2 {
+  z-index:0;
+  .overlay {
+    z-index:2!important;
+  }
+}
+
+#s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #s10 {
+  background-image: url(images/estore-sprite.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width:100%;
+  height:200px;
+}
+#s10{  background-position: 0px 200px; width:auto;}
+#s1{  background-position: 0px 0px;}
+#s2{ background-position: -300px 15px;}
+#s3{ background-position: -600px 0px;}
+#s4{  background-position: -900px 0px;}
+#s5{  background-position: -1200px 0px;}
+#s6{  background-position: -1500px 0px;}
+#s7{  background-position: 0px -200px;}
+#s8{  background-position: -320px -200px;}
+#s9{  background-position: -655px -200px;}
+#s10{
+  background: $black;
+  height:200px;
+  width:100%;
+  z-index:-1;
+}
+
+
+
+
+.xs-1, .xs-2, .xs-3, .xs-4, .xs-5, .xs-6,.xs-7,.xs-8,.xs-9,.xs-10,.xs-11,.xs-11,.xs-12,.xs-13 {
+  background-image: url(images/eweb-xs-sprite.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width:100%;
+  height:200px;
+}
+.xs-1 {  background-position: 0px 0px;}
+.xs-2 {  background-position: -300px 0px;}
+.xs-3 { background-position:  -600px 0px;}
+.xs-4 { background-position: 0px -208px;}
+.xs-5 {  background-position: -300px -200px;}
+.xs-6 {  background-position: -600px -300px;}
+.xs-7 {  background-position: -1500px 0px;}
+.xs-8 {  background-position: 0px -200px;}
+.xs-9 {  background-position: -320px -200px;}
+.xs-10{  background-position: -655px -200px;}
+.xs-11{ background-position: -300px -400px;}
+.xs-12{ background-position: -600px -240px;}
+.xs-13 {background-position: -605px -400px;}
+.xs-4{
+  height:400px;
+}
+
+
+
+
+.stroke, .white-stroke {
+  border-bottom:3px solid #151515;
+  width:30px;
+  margin: 5px auto;
+}
+.white-stroke {
+  border-bottom:3px solid #fff;
+}
+
+.r1-100, .r2-100, .r3-100, .r4-100{
+  background-image: url(images/sprite.jpg);
+  background-repeat: no-repeat;
+  height:100px;
+  margin-bottom:5px;
+}
+.r1-100 {
+  background-position: 0px 0px;
+}
+.100-overlay{
+  background:#151515;
+  opacity:.8;
+  height:100px;
+  width:100%;
+}
+.left {
+  position:relative;
+  float:left;
+  width:33.333%;
+}
+.center {
+  padding-top: 15px;
+  text-align: center;
+  width:33.333%;
+}
+.right{
+  width:33.333%;
+}
+.text-center{
+  text-align:center;
+}
+.underline{
+  border-bottom: 1px solid #eee;
+}
+.center a {
+  margin-left: 8%;
+  text-decoration: none;
+  display: inline;
+  font-size: 2.3vh;
+  color: $black;
+  padding: 10px;
+  :hover {
+    background: blue;
+  }
+}
+
+/* inner pages*/
+.content {
+   h1 {
+   color:white;
+   margin: 0;
+   padding: 0;
+ }
+}
+/* overlay text*/
+div {
+  h1 {
+    font-weight: 300;
+    text-align:center;
+    z-index:10;
+    .white {
+      color: white;
+      :hover {
+        color: #97d700;
+        border: 2px solid #97d700;
+      }
+    }
+  }
+}
+
+.liquid-container {
+  margin-top:5px;
+  h2 {
+    text-align:center;
+    text-decoration: none;
+  }
+  h3 {
+    color:$black;
+    text-align:center;
+    text-decoration: none;
+  }
+}
+
+.full-width {
+  min-height:100px;
+  width:100%;
+  background:yellow;
+  z-index:10;
+
+}
+
+/*
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////BEGIN LOST - GRID - CSS ///////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
+/* Lost Column
+*/
+section .parent {
+  lost-utility: clearfix;
+}
+
+div .child {
+  lost-column: 1/3;
+  height:400px;
+  margin-bottom:5px;
+/*   background:$green; */
+  h3{
+    color:white;
+    text-align:center;
+    padding-top:15%;
+  }
+}
+
+
+/* LOST-WAFFLE
+Creates a block that is a fraction of the size of its
+containing element's width AND height with a gutter on the right and bottom.
+inputs: fraction | cycle | gutter | flex|no-flex
+*/
+.waffle-parent{
+  height: 100%;
+}
+.waffle-child{
+  lost-waffle: 1/3 3 20px;
+  height:100px;
+  background:$black;
+}
+
+
+/* LOST-ALIGN
+Align Nested Elements Apply lost-align to parent container*/
+
+/*reset|horizontal|vertical|top-left|top-center|top|top-right|middle-left|left
+|middle-center|center|middle-right|right|bottom-left|bottom-center|bottom|bottom-right*/
+.align {
+  lost-align:bottom-right;
+  width: 600px;
+  height: 400px;
+}
+.align-child {
+  width: 100px;
+  height: 100px;
+  background:$black;
+}
+
+.break-10{
+  height:10px;
+  width:100%;
+}
+.break-20{
+  height:20px;
+  width:100%;
+}
+.break-40{
+  height:40px;
+  width:100%;
+}
+.break-60{
+  margin-top:60px;
+  width:100%;
+}
+
+.red {
+  color:red;
+}
+.index {
+  margin:5px;
+}
+/* LOST-CENTER
+You can also make use of the lost-center property to assign a max-width and margin: auto to an
+element and center it on the page. clearfix will automatically be applied in this case.
+*/
+.center-parent-xxsm {
+  lost-center: 200px;
+}
+.center-parent-xsm {
+  lost-center: 300px;
+}
+
+.center-parent-sm {
+  lost-center: 600px;
+}
+.center-parent-md {
+  lost-center: 900px;
+}
+.center-parent-lg {
+  lost-center: 1200px;
+}
+.center-child-full{
+  width:100%;
+  margin-bottom:5px;
+  min-height:50px;
+  background:white;
+}
+
+.center-child-quarter{
+  lost-column: 1/4 0;
+  height:300px;
+  background:$black;
+}
+.center-child-third{
+  lost-column: 1/3;
+  margin-bottom:5px;
+  height:100px;
+  background:$black;
+}
+.center-child-half{
+  lost-column: 1/2;
+  margin-bottom:5px;
+  height:100px;
+  background:white;
+  box-shadow: 0px 8px 17px rgba(0,0,0,.2);
+
+}
+
+.title{
+  background:#151515;
+  opacity:.8;
+  h3{
+    color: white;
+  }
+}
+/* LOST-COLUMN
+Creates a column that is a fraction of the size of its containing element's width with a gutter.
+*/
+
+.column-child{
+  lost-column: 1/2;
+  background:$black;
+}
+
+
+
+/* LOST-FLEXBOX-GRIDS  All or nothing it appears
+ @lost flexbox flex;
+ */
+
+ .flexbox-grids-parent {
+  lost-center: 900px;
+}
+.flexbox-grids-child{
+  lost-column: 1/3;
+  margin-bottom:5px;
+  height:200px;
+  background:$black;
+}
+
+
+/* LOST-FLEX-CONTAINER  -  Creates a flexbox container
+- The flex-direction the container should create. This is typically opposite to the
+element you're creating so a row would need lost-flex-container: column;.
+inputs: row|column
+ */
+
+ .flex-container-parent{
+   lost-flex-container: row;
+   lost-utility: edit;
+}
+ .flex-container-child{
+   lost-column: 1/3 flex;
+   margin-bottom:5px;
+   height:200px;
+   background:blue;
+ }
+
+
+
+/* LOST-MOVE
+Source ordering. Shift elements left, right, up, or down, by their left or top position by
+passing a positive or negative fraction.
+inputs: fraction | row|column;should be opposite of col/row its used on  | gutter
+*/
+.move {
+  lost-column: 1/2;
+  background:blue;
+  height:100px;
+}
+.move:first-child {
+  lost-move: 1/2;
+  background:white;
+}
+.move:last-child{
+  lost-move: -1/2;
+  background:white;
+}
+
+/* LOST-CYCLE
+Use lost-utility: edit; on body to visualize the entire structure of your site,
+or just specify the areas you're working on. apply to parent
+*/
+.row {
+  lost-utility: clearfix;
+  height:260px;
+}
+
+.full, .quarter, .quarter-sm, .half, .eighth, .third {
+  background:$black;
+}
+
+.full {
+  lost-column: 1;
+  height:250px;
+}
+.quarter {
+  lost-column: 1/4 0;
+  height:250px;
+}
+.quarter-sm {
+  lost-column: 1/4 0;
+  height:100px;
+}
+.three-quarter{
+  lost-column: 3/4 0;
+  height:250px;
+}
+
+.half {
+  lost-column: 1/2 0;
+  height:250px;
+}
+
+.eighth {
+  lost-column: 1/8 0;
+  height:250px;
+}
+.third{
+  lost-column: 1/3 0;
+  height:250px;
+}
+.third-header{
+  text-align:center;
+  lost-column: 1/3 0;
+  height:50px;
+}
+.third-link{
+  lost-column: 1/3 0;
+  height:50px;
+}
+
+/* LOST-OFFSET
+Margin to the left, right, bottom, or top, of an element depending on if the fraction passed
+is positive or negative. It works for both horizontal and vertical grids but not both.
+inputs: fraction | row|column | gutter
+*/
+.two-elements {
+  lost-column: 1/2 ;
+  height:200px;
+  width:200px;
+}
+
+.two-elements:first-child {
+  lost-offset: -1/2 row;
+}
+
+
+
+/* LOST-ROW
+Creates a row that is a fraction of the size of its containing element's height with a gutter.
+Apply height % to parent & lost-row: fraction to child
+Inputs: fraction | Gutter | Flex|no-flex
+*/
+.vertical-parent {
+  height:100%;
+
+}
+.vertical-child {
+  lost-row: 1/2 20px;
+  background:$green;
+  margin:5px auto;
+  p{
+    font-size:24px;
+  }
+  h3{
+    color:white;
+    text-align:center;
+    padding-top: 2%;
+  }
+}
+
+/* LOST-MASONRY-ROW
+*/
+/* LOST-MASONRY-COLUMN
+*/
+/* LOST-NEST
+Nesting is simple and requires no extra context unlike other preprocessor grid systems.
+*/
+.nest-full{
+  lost-column: 1 20px;
+  height:300px;
+}
+.nest-parent{
+  lost-column:1/2;
+  height:500px;
+  h1{
+    color:white;
+    text-align:center;
+  }
+}
+.child-nest-third{
+  lost-column:1/3;
+  background:$black;
+  height:200px;
+}
+.child-nest-a{
+  lost-column:1/2;
+  background:white;
+
+}
+.child-nest-b{
+  width:100px;
+  color:white;
+  background:blue;
+
+}
+.child-nest-c{
+  width:50px;
+  background:red;
+
+}
+
+.hero-container .overlay {
+  height:200px;
+}
+
+.white{
+  color:#97d700;
+}
+p {
+  color:white;
+}
+#green {
+  color:$green;
+}
+.whitebg{
+  background:#fff!important;
+}
+
+
+a {
+  margin:5px auto;
+}
+
+.overlay h2 {
+  padding-top:1.2%;
+  font-size:4vw;
+}
+
+@media (--sm-mobile){
+  h1{
+    font-size:5.9vw;
+  }
+  h3 {
+    text-align:center;
+    color:white;
+    font-size:4.5vw;
+  }
+  h4{
+    padding-top:4%;
+    font-size:4vw;
+    text-align:center;
+    color:$green;
+  }
+
+  div .child {
+    lost-column: 1;
+    height:400px;
+  }
+  .overlay{
+    height:100px;
+  }
+  .child-cal{
+    lost-column:1/3;
+    height:100px;
+  }
+
+
+  .ul3,.ul4, .ul5 {
+    visibility:hidden;
+  }
+}
+@media (--lg-mobile){
+  h1{
+    font-size:3.4vw;
+  }
+  h3 {
+    text-align:center;
+    color:white;
+    font-size:3.2vw;
+  }
+  h4{
+    font-size:2.8vw;
+    color:$green;
+    text-align:center;
+  }
+  div .child {
+    lost-column: 1;
+    height:400px;
+    margin-bottom:5px;
+  }
+  .child-cal{
+    lost-column:1/5;
+    height:100px;
+  }
+
+  .overlay h2 {
+    padding-top:1.2%;
+  }
+  .ul5 {
+    visibility:hidden;
+  }
+}
+@media (--sm-tablet){
+  h1{
+    font-size:3vw;
+  }
+  h3 {
+    text-align:center;
+    color:white;
+    font-size:2.4vw;
+  }
+  h4{
+    text-align: center;
+    font-size:2.2vw;
+    color:$green;
+  }
+  div .child {
+    lost-column: 1/3;
+    height:400px;
+    margin-bottom:5px;
+  }
+  .child-cal{
+    lost-column:1/5;
+    height:100px;
+  }
+
+
+  .ul5 {
+    visibility:hidden;
+  }
+}
+@media (--lg-tablet){
+  h1{
+    font-size:2.4vw;
+  }
+  h3 {
+    text-align:center;
+    color:white;
+    font-size:2.2vw;
+  }
+  h4{
+    font-size:2vw;
+    color:$green;
+    text-align:center;
+
+  }
+  div .child {
+    lost-column: 1/3;
+    height:400px;
+    margin-bottom:5px;
+  }
+
+}
+@media (--sm-desktop){
+  h1{
+    font-size:2.4vw;
+  }
+  h3 {
+    text-align:center;
+    color:white;
+    font-size:2.2vw;
+  }
+  h4{
+    font-size:2vw;
+    color:$green;
+    text-align: center;
+
+  }
+  div .child {
+    lost-column: 1/3;
+    height:400px;
+    margin-bottom:5px;
+  }
+}
+@media (--lg-desktop){
+  h1{
+    font-size:2.1vw;
+  }
+  h3 {
+    text-align:center;
+    color:white;
+    font-size:1.8vw;
+  }
+  h4{
+    font-size:1.6vw;
+    color:$green;
+    text-align: center;
+  }
+  div .child {
+    lost-column: 1/4;
+    height:400px;
+    margin-bottom:5px;
+  }
+}
+.slideUp{
+  	animation-name: slideUp;
+  	-webkit-animation-name: slideUp;
+
+  	animation-duration: 1s;
+  	-webkit-animation-duration: 1s;
+
+  	animation-timing-function: ease;
+  	-webkit-animation-timing-function: ease;
+
+  	visibility: visible !important;
+  }
+
+  @keyframes slideUp {
+  	0% {
+  		transform: translateY(100%);
+  	}
+  	50%{
+  		transform: translateY(-8%);
+  	}
+  	65%{
+  		transform: translateY(4%);
+  	}
+  	80%{
+  		transform: translateY(-4%);
+  	}
+  	95%{
+  		transform: translateY(2%);
+  	}
+  	100% {
+  		transform: translateY(0%);
+  	}
+  }
+
+  @-webkit-keyframes slideUp {
+  	0% {
+  		-webkit-transform: translateY(100%);
+  	}
+  	50%{
+  		-webkit-transform: translateY(-8%);
+  	}
+  	65%{
+  		-webkit-transform: translateY(4%);
+  	}
+  	80%{
+  		-webkit-transform: translateY(-4%);
+  	}
+  	95%{
+  		-webkit-transform: translateY(2%);
+  	}
+  	100% {
+  		-webkit-transform: translateY(0%);
+  	}
+  }
+
+
+
+
+
+
+
+/* transferred css */
+
+.main-logo {
+  width: 200px;
+}
+
+.wrap{
+	max-width: 1180px;
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.btn-full {
+  width:95%;
+  margin: 0 2.5%;
+}
+
+.img-3 {
+	background-position: -50px -1900px;
+}
+
+.contact-wrapper{
+	width:100%;
+	height: 100vh;
+	background: url(images/381.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.contact-content {
+	position: absolute;
+	top:5%;
+	left:5%;
+	right:5%;
+	bottom:5%;
+	padding:2em;
+	background: rgba(255,255,255,.9);
+}
+
+input {
+  border: none;
+  padding-bottom:10px;
+  border-bottom:3px solid;
+  font-size: 25px;
+  padding: 1em 0;
+  width:100%;
+}
+.contact-section-2 {
+  height:400px;
+  background:#151515;
+  h1{
+    color:#97d700;
+  }
+}
+.item {
+  display: block;
+  margin:1em 0;
+}

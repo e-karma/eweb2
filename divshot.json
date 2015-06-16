@@ -1,0 +1,8 @@
+{
+  "name": "eweb2",
+  "root": "./dist",
+  "routes": {
+    "/**": "index.html"
+  },
+  "prerender": true
+}

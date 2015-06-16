@@ -1,0 +1,37 @@
+<h1>Fastboot - Server-Side Loading of Ember Apps</h1>
+
+<h2>What is it?</h2>
+
+<a href='http://emberjs.com/blog/2014/12/22/inside-fastboot-the-road-to-server-side-rendering.html'>Inside the road to server sider rendering</a>
+<p>FastBoot allows you to deliver the HTML and CSS for a page in your application right away, then allow the JavaScript to take over once it has finished loading. Your app will behave no differently than server-rendered apps when it comes to search engines, mobile users, cURL, or users with JavaScript disabled.</p>
+
+<h2><strong>Twitter Implementation reduced initial load-time of Single Page Applications 80%</strong></h2>
+<p>“By rendering our page content on the server and deferring all JavaScript execution until well after   that content has been rendered, we’ve dropped the time to first Tweet to one-fifth of what it was.”
+<a href='https://blog.twitter.com/2012/improving-performance-on-twittercom'>Improving Performance on Twitter</a></p>
+
+<h2>Why is it valuable?</h2>
+<p>-As mentioned here <a href=''>SPA Link</a>, the drawbacks of single page applications are dwindling slowly but surely
+	-Eliminates a main drawback of single page applications</p>
+<h2>Technical Implementation</h2>
+<p>fastboot is completely agnostic to the technology that powers your API</p>
+
+<a href='https://github.com/tildeio/ember-cli-fastboot'>Ember-CLI Fastboot</a>
+<h2>Purpose</h2>
+<p>The purpose of Fastboot is not to convert Ember into a server side framework, but to enable instant loading of an Ember application by sending first the initial page in html and lazily load the rest application in javascript. Also, it's going to be useful for SEO.</p>
+
+
+<h2>FROM EMBERS BLOG </h2>
+
+<em>”Working with LinkedIn and Bustle closely has helped us to work through the initial requirements, and identify steps that we could take that would help enterprising teams make progress while we take the next steps.”</em>
+<p>
+SPA's has exploded in popularity over the past few years.
+The newest trend is using JavaScript allows us to build fast, interactive web applications.
+What was once limited to native apps, can be performed in your browser with a single page javascript application.
+Fastboot encompasses the ideal approach to the initial loading of your web app by sending just HTML & CSS “Scaffolding” from the server upon the first visit. This produces the impression that the page is fully loaded (and fast!).  Simultaneously while fastboot is loading the HTML/CSS, the Javascript Application is being loaded in the background and VOILA! Best of both worlds achieved.  God bless Ember & Yaheuda / Tom.  Now just ship it already!
+
+The true genius behind the innovation that is fastboot is the foresight to architect Ember in an isolated way that makes it all possible.
+The end result is your  app will behave the same as server-rendered apps from a search engine standpoint as well as mobile users, or users with JavaScript disabled.
+For everyone else, you'll still have the responsiveness and interactivity users have come to expect from Ember apps.
+The goal is to make server rendering so simple to use that everyone will use it.
+A big shout out is due to Dan Gebhard for his work on this feature
+</p>
