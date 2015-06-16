@@ -514,7 +514,7 @@ section {
 
 
 
-.xs-1, .xs-2, .xs-3, .xs-4, .xs-5, .xs-6,.xs-7,.xs-8,.xs-9,.xs-10,.xs-11,.xs-11,.xs-12,.xs-13 {
+.xs-1, .xs-2, .xs-3, .xs-4, .xs-5, .xs-6,.xs-7,.xs-8,.xs-9,.xs-10,.xs-11,.xs-11,.xs-12,.xs-13, .xs-14 {
   background-image: url(images/eweb-xs-sprite.jpg);
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -534,6 +534,11 @@ section {
 .xs-11{ background-position: -300px -400px;}
 .xs-12{ background-position: -600px -240px;}
 .xs-13 {background-position: -605px -400px;}
+.xs-14 {
+  width:200px;
+  background-position: -410px 0px;
+}
+
 .xs-4{
   height:400px;
 }
