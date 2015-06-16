@@ -419,7 +419,7 @@ section {
 }
 .black-text{
   margin: 2em 0;
-  font-size:360%;
+  font-size:3.6vw;
   color: #151515;
 }
 .dash1, .dash2, .dash3, .store1, .store2, .store3, .email1, .email2, .email3, .crm1, .crm2, .crm3, .profile1, .profile2, .profile3, .blog-sm, .blog-lg, .cal1, .cal2, .cal3, .todo1, .todo2, .todo3, .analytics1, .builder1, .msg1, .msg2, .mktg1, .mktg2, .dev1, .dev2, .dev3, .nw1, .nw2, .ss1, .sc1, .content1, .content2, .event1, .profile-sm, .profile-lg, .design1, .design2  {
