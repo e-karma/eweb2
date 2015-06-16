@@ -112,6 +112,9 @@ section {
 
 }
 
+ .padding-top {
+   padding-top:5%;
+ }
 
 .gap40{
 	display: block;
@@ -216,9 +219,7 @@ section {
   z-index: 0;
 }
  */
-.black {
-  background: #151515;
-}
+
 
 .inset-border {
   border:2px solid #97d700;
@@ -243,6 +244,7 @@ section {
 .black {
   text-align:center;
   color: #151515;
+  background: #151515;
 }
 .parent {
   height:100%;
